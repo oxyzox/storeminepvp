@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinePVP - Ultimate Minecraft PvP Experience</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <a href="#" class="logo">MinePVP</a>
+            <div class="mobile-menu" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#store">Store</a>
+                <a href="https://discord.gg/minepvp">Discord</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>MinePVP</h1>
+            <p style="font-size: 1.5em; margin-bottom: 30px;">Ultimate BoxPvP Experience</p>
+            <div class="server-status glass">
+                <h2>Server Status</h2>
+                <div class="player-count">
+                    <span id="status-indicator" class="status-indicator"></span>
+                    <i class="fas fa-users"></i>
+                    <span id="playerCount">Loading...</span>
+                    <div id="server-version" style="font-size: 0.9em; margin-top: 10px; color: #aaa;"></div>
+                </div>
+                <div class="ip-address" onclick="copyIP()">
+                    <i class="fas fa-play"></i> play.minepvp.fun
+                </div>
+                <p>Click to copy IP</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2 class="section-title">Why Choose Us?</h2>
+            <div class="features">
+                <div class="feature glass">
+                    <i class="fas fa-sword"></i>
+                    <h3>Epic PvP Combat</h3>
+                    <p>Experience intense battles with custom enchantments, abilities, and unique combat mechanics</p>
+                </div>
+                <div class="feature glass">
+                    <i class="fas fa-crown"></i>
+                    <h3>Weekly Events</h3>
+                    <p>Participate in tournaments, challenges, and special events with amazing rewards</p>
+                </div>
+                <div class="feature glass">
+                    <i class="fas fa-gem"></i>
+                    <h3>Custom Features</h3>
+                    <p>Enjoy unique gameplay elements, custom items, and exclusive content</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="store" class="store">
+        <h2 class="section-title">Store</h2>
+        <div class="store-items">
+            <div class="store-item glass">
+                <h3>VIP</h3>
+                <div class="price">$9.99</div>
+                <ul>
+                    <li><i class="fas fa-check"></i> Custom Chat Colors</li>
+                    <li><i class="fas fa-check"></i> /fly Command</li>
+                    <li><i class="fas fa-check"></i> 2x Money Multiplier</li>
+                    <li><i class="fas fa-check"></i> Exclusive Kit</li>
+                </ul>
+                <a href="#" class="btn">Purchase Now</a>
+            </div>
+            <div class="store-item glass">
+                <h3>MVP</h3>
+                <div class="price">$19.99</div>
+                <ul>
+                    <li><i class="fas fa-check"></i> All VIP Features</li>
+                    <li><i class="fas fa-check"></i> Custom Join Messages</li>
+                    <li><i class="fas fa-check"></i> 3x Money Multiplier</li>
+                    <li><i class="fas fa-check"></i> Premium Kits</li>
+                </ul>
+                <a href="#" class="btn">Purchase Now</a>
+            </div>
+            <div class="store-item glass">
+                <h3>LEGEND</h3>
+                <div class="price">$29.99</div>
+                <ul>
+                    <li><i class="fas fa-check"></i> All MVP Features</li>
+                    <li><i class="fas fa-check"></i> Custom Nickname</li>
+                    <li><i class="fas fa-check"></i> 5x Money Multiplier</li>
+                    <li><i class="fas fa-check"></i> Exclusive Particles</li>
+                </ul>
+                <a href="#" class="btn">Purchase Now</a>
+            </div>
+        </div>
+    </section>
+
+<script src="app.js"></script>
+</body>
+</html>
